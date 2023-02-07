@@ -24,7 +24,7 @@ const posts = [
       },
       { type: "link", content: '👉 <a href="#">jane.design/doctorcare</a>' },
     ],
-    pubishedAt: new Date("2023-02-03 10:29"),
+    publishedAt: new Date('2023-02-07 10:29:00'),
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const posts = [
       },
       { type: "link", content: '👉 <a href="#">jane.design/doctorcare</a>' },
     ],
-    pubishedAt: new Date("2023-02-06 19:29"),
+    publishedAt: new Date('2023-02-06 19:29:00'),
   },
 ];
 import { Sidebar } from "./components/Sidebar";
@@ -60,7 +60,7 @@ export function App() {
               <Post
                 author={post.author}
                 content={post.content}
-                pubishedAt={post.pubishedAt}
+                publishedAt={post.publishedAt}
               />
             );
           })}
